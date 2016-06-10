@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+body{
+	font-size: 20px;
+	font-family: Georgia, serif;
+	line-height: 1.618em;
+}
+p {
+	margin-bottom: 1.5em;
+}
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 1em 0 0 1.5em;
+}
+
+#link {
+	border-bottom: solid 1px #000;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+									/*HEADER*/
+header {
+    font-size: 1.2em;
+    padding-bottom: 1.4em;
+    margin: .8em 0;
+}
+
+header h1 {
+	float: left;
+	margin-left: 1em;
+	font-variant: small-caps;
+}
+
+header h1:hover {
+	text-decoration: underline;
+}
+
+header nav {
+	float: right;
+}
+
+header nav li {
+	float: left;
+	width: auto;
+	list-style-type: none;
+}
+
+header nav a {
+	padding-right: 1em;
+	font-size: 1em;
+	font-variant: small-caps;
+}
+header a:hover {
+	text-decoration: underline;
+}
+
+										/*ABOUT*/
+#profile-pic {	
+	width: 80%;
+	min-width: 200px;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+	border-radius: 50%;
+	display: block;
+	margin: 3em auto;
+	border: solid #000 2px;
+}
+
+#about {
+	background-color: #00BCD4;
+	clear: both;
+	padding: 3em;
+}
+
+#about h2 {
+    margin: .5em 0;
+    padding: 0 0 .5em;
+    font-size: 1.4em;
+}
+
+#profile-left {
+	float: left;
+	width: 30%;
+}
+
+#profile-right {
+	width: 70%;
+	margin: 1em auto;
+	padding-left: 4em;
+	float: right;
+}
+                                     /*WORK*/
+
+#work {
+	padding: 2em;
+}
+#work1 {
+	width: 33.3%;
+	float: left;
+}
+#work2 {
+	width: 33.3%;
+	float: left;
+}
+#work3 {
+	width: 33.3%;
+	float: left;
+}
+.work-pic {	
+	width: 90%;
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+	border-radius: 15px;
+	display: block;
+	margin: 2em auto;
+	border: solid #000 2px;
+}
+
+.work-pic:hover, .work-pic:active {
+	-moz-box-shadow:2px 1px 15px #333;
+    -webkit-box-shadow: 2px 1px 15px #333;
+    -ms-box-shadow: 2px 1px 15px #333;
+    -o-box-shadow: 2px 1px 15px #333;
+	box-shadow: 2px 1px 15px #333;
+}
+
+figure {
+	margin: 0;
+}
+figcaption {
+	text-align: center;
+	margin: 0 auto 2em;
+	padding-bottom: 2em;
+}
+
+									/*CONTACT*/
+
+
+button {
+	margin: 2em 0 0 2em;
+	padding: 1em;
+	border-radius: 15px;
+	background-color: #FFF;
+}
+#contact {
+  background-color: #00BCD4;
+  width: 100%; 
+  overflow: auto;
+  padding: 2em;
+}
+#contact-left {
+	float: left;
+	width: 40%;
+}
+#contact #contact-left p {
+	margin: 3em 0 0 1.8em;
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.62em;
+}
+#contact-right {
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+#contact-right img {
+  width: 50px;
+  float: left;
+  margin-right: 1em;
+}
+#contact-right li {
+  list-style-type: none;
+  padding: .5em;
+  font-size: 1em;
+  line-height: 2.1em;
+}
+#contact-right li:hover {
+	text-decoration: underline;
+}
+#contact-right ul {
+  margin: 3em 0;
+}
+.next {
+  clear: both;
+}
+
+
+					/*BACK TO TOP*/
+
+#arrow {
+	clear: both;
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 1.2em;
+}
+#arrow:hover {
+	text-decoration: underline;
+}
+
+
+					/*MEDIA QUERIES*/
+
+
+@media screen and (max-width: 1320px) {
+	#work1 {
+		width: 50%;
+		float: left;
+	}
+	#work2 {
+		width: 50%;
+		float: left;
+	}
+	#work3 {
+		float: none;
+		clear: both;
+		width: 50%;
+		margin: auto;
+	}
+@media screen and (max-width: 900px) {
+	#work1 {
+		width: 100%;
+		float: none;
+		margin: auto;
+	}
+	#work2 {
+		width: 100%;
+		float: none;
+		margin: auto;
+	}
+	#work3 {
+		width: 100%;
+	}
+	body {
+		font-size: 16px;
+	}
+	#link {
+		border-bottom: solid 1px #000;
+	}
+
+	#profile-left {
+		float:none;
+		width: 40%;
+		margin: auto;
+	}
+	#profile-right {
+		float: none;
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+
+	#about h2 {
+		text-align: center;
+	}
+	#profile-pic {
+		display: block;
+		margin: 2em auto;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#contact-left {
+		float: none;
+	}
+	#contact-left p {
+		display: none;
+	}
+	#contact-right {
+		float: none;
+		width: 100%;
+	}
+	#about {
+		padding: 2em;
+	}
+	#profile-left {
+		width: 70%;
+	}
+	.work-pic {	
+	border: solid #000 1px;
+}
+}
+
