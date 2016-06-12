@@ -15,9 +15,11 @@
 		<a href="index.html"><h1>Rebecca Snyder</h1></a>
 
 		<nav>
-			<ul>
+			<ul class="topnav">
+				<li><a href="#work">Work</a></li>
 				<li><a href="2016-05-19.html">Blog</a></li>
 				<li><a href="#contact">Contact</a></li>	
+				<li class="icon"><a href="javascript:void(0);" onclick="dropDown()">&#9776;</a></li>
 			</ul>	
 		</nav>
 	</header>
@@ -82,6 +84,11 @@
 
 	  ga('create', 'UA-77911968-1', 'auto');
 	  ga('send', 'pageview');
+
+	  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function dropDown() {
+		    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+		}
 
 	</script>
 
