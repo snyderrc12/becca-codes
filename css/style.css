@@ -27,10 +27,6 @@ h2 {
 	margin: 1em 0 0 1.5em;
 }
 
-#link {
-	border-bottom: solid 1px #000;
-}
-
 a {
 	text-decoration: none;
 	color: #000;
@@ -104,6 +100,10 @@ header a:hover {
     margin: .5em 0;
     padding: 0 0 .5em;
     font-size: 1.4em;
+}
+
+#about a  {
+	text-decoration: underline;
 }
 
 #profile-left {
@@ -262,9 +262,6 @@ button {
 	}
 	body {
 		font-size: 16px;
-	}
-	#link {
-		border-bottom: solid 1px #000;
 	}
 
 	#profile-left {
