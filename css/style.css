@@ -86,7 +86,7 @@ header a:hover {
     -o-border-radius: 50%;
 	border-radius: 50%;
 	display: block;
-	margin: 3em auto;
+	margin: 6em auto;
 	border: solid #000 2px;
 }
 
@@ -246,6 +246,10 @@ button {
 		width: 50%;
 		margin: auto;
 	}
+	#profile-pic {
+		margin: 6em auto;
+	}
+
 @media screen and (max-width: 900px) {
 	#work1 {
 		width: 100%;
